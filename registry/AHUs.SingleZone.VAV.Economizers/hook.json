@@ -1,0 +1,75 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "AHUs.SingleZone.VAV.Economizers",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "u1SupFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uFreProSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uOpeMod",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uSupFan_actual",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VOutMinSet_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uZonSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TSupHeaEcoSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "yHeaCoi",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam_min",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

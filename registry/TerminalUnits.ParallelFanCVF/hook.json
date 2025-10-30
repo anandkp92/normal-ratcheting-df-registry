@@ -1,0 +1,171 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "TerminalUnits.ParallelFanCVF",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "uOpeMod",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TDis",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Fan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1HotPla",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1TerFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VPri_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TCooSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "THeaSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TZon",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveFloSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TSupSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2Set",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Occ",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Win",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VParFan_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveDamPos",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uHeaOff",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "VAdjAreBreZon_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VAdjPopBreZon_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VMinOA_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VSet_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VZonAbsMin_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VZonDesMin_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1Fan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yCO2",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yFanStaAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yFloSenAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHeaValResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotWatPlaReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yLeaDamAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yLeaValAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yLowFloAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yLowTemAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yVal",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonPreResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonTemResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

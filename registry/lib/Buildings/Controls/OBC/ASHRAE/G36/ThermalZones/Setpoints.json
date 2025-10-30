@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "TUnoHeaSet",
+    "uOpeMod",
+    "uCooDemLimLev",
+    "uHeaDemLimLev",
+    "TUnoCooSet",
+    "TOccCooSet",
+    "TOccHeaSet",
+    "u1Win"
+  ],
+  "outputs": [
+    "TCooSet",
+    "THeaSet",
+    "yAla"
+  ]
+}

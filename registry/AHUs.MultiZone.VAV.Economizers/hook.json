@@ -1,0 +1,99 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "AHUs.MultiZone.VAV.Economizers",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "u1SupFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uOpeMod",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VOut_flow_normalized",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VOutMinSet_flow_normalized",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hAirOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uFreProSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uTSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uSupFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "dpMinOutDam",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "effAbsOutAir_normalized",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "effDesOutAir_normalized",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uCO2Loo_max",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "y1MinOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yEnaMinOut",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yMinOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam_min",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRelDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

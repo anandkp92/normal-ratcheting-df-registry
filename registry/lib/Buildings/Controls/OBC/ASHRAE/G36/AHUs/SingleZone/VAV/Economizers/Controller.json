@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    "u1SupFan",
+    "uFreProSta",
+    "uOpeMod",
+    "uSupFan_actual",
+    "VOutMinSet_flow",
+    "hAirRet",
+    "TAirRet",
+    "hOut",
+    "TOut",
+    "uZonSta",
+    "TAirSup",
+    "TSupHeaEcoSet"
+  ],
+  "outputs": [
+    "yHeaCoi",
+    "yOutDam",
+    "yOutDam_min",
+    "yRetDam"
+  ]
+}

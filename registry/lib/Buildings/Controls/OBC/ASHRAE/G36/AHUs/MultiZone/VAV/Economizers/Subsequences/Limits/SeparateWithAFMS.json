@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    "VOut_flow_normalized",
+    "VOutMinSet_flow_normalized",
+    "u1SupFan",
+    "uOutDam",
+    "uOpeMod",
+    "uSupFan"
+  ],
+  "outputs": [
+    "yEnaMinOut",
+    "yMinOutDam",
+    "yOutDam_max",
+    "yOutDam_min",
+    "yRetDam_max",
+    "yRetDam_min",
+    "yRetDamPhy_max"
+  ]
+}

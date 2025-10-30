@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "uTSup",
+    "uRetDam_max",
+    "uRetDam_min"
+  ],
+  "outputs": [
+    "yOutDam",
+    "yRelDam",
+    "yRetDam"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "TZonHeaSetCur",
+    "ratSig",
+    "rebSig",
+    "TZonHeaSetMin",
+    "TZonHeaSetNom",
+    "TZon",
+    "loaShe"
+  ],
+  "outputs": [
+    "reachTZonHeaSetMin",
+    "reachTZonHeaSetNom",
+    "TZonSetHeaCom"
+  ]
+}

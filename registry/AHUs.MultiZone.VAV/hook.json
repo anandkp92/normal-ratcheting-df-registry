@@ -1,0 +1,207 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "AHUs.MultiZone.VAV",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "uOutAirFra_max",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VAirOut_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VSumAdjAreBreZon_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VSumAdjPopBreZon_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VSumZonPri_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "dpDuc",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uAhuOpeMod",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uZonPreResReq",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1SupFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uZonTemResReq",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "dpMinOutDam",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hAirOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uCO2Loo_max",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirMix",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1FreSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1SofSwiRes",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "dpBui",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VAirRet_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VAirSup_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VSumZonAbsMin_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VSumZonDesMin_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "dpDisSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "TAirSupSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VEffAirOut_flow_min",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1EneCHWPum",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1MinOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1RelDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1RelFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1RetFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1SupFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yChiPlaReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yChiWatResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yCooCoi",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yDpBui",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHeaCoi",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotWatPlaReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotWatResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yMinOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRelDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRelFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "ySupFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

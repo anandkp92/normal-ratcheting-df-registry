@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "TAirSup",
+    "TAirSupSet",
+    "uCooCoiSet",
+    "uHeaCoiSet"
+  ],
+  "outputs": [
+    "yChiPlaReq",
+    "yChiWatResReq",
+    "yHotWatPlaReq",
+    "yHotWatResReq"
+  ]
+}

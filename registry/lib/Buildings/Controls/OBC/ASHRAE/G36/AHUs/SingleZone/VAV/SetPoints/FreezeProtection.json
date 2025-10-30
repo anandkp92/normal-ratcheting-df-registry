@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    "u1RetFan",
+    "u1RelFan",
+    "u1SupFan",
+    "uCooCoi",
+    "uOutDam",
+    "uSupFan",
+    "uRetFan",
+    "uRelFan",
+    "uRetDam",
+    "uHeaCoi",
+    "TAirSup",
+    "TAirMix",
+    "uOutDamPosMin",
+    "u1FreSta"
+  ],
+  "outputs": [
+    "y1EneCHWPum",
+    "y1RelFan",
+    "y1RetFan",
+    "y1SupFan",
+    "yAla",
+    "yCooCoi",
+    "yFreProSta",
+    "yHeaCoi",
+    "yHotWatPlaReq",
+    "yOutDam",
+    "yRelFan",
+    "yRetDam",
+    "yRetFan",
+    "ySupFan"
+  ]
+}

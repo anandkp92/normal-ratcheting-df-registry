@@ -1,0 +1,11 @@
+{
+  "inputs": [
+    "uOpeMod",
+    "TOut",
+    "uZonTemResReq",
+    "u1SupFan"
+  ],
+  "outputs": [
+    "TAirSupSet"
+  ]
+}

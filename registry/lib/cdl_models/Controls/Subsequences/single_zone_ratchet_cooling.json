@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "TZonCooSetCur",
+    "ratSig",
+    "rebSig",
+    "TZonCooSetNom",
+    "TZonCooSetMax",
+    "TZon",
+    "loaShe"
+  ],
+  "outputs": [
+    "reachTZonCooSetMax",
+    "reachTZonCooSetNom",
+    "TZonCooSetCom"
+  ]
+}

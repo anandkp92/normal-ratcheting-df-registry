@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "u1SupFan",
+    "uFreProSta",
+    "uZonSta",
+    "uOutDam_min",
+    "uOutDam_max",
+    "TOut",
+    "TCut",
+    "hOut",
+    "hCut"
+  ],
+  "outputs": [
+    "yOutDam_max",
+    "yRetDam_max",
+    "yRetDam_min"
+  ]
+}

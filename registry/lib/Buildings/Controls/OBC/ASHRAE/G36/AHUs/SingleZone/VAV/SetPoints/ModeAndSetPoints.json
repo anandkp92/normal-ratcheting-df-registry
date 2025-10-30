@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "tNexOcc",
+    "TZon",
+    "u1Occ",
+    "cooSetAdj",
+    "heaSetAdj",
+    "setAdj",
+    "TOccCooSet",
+    "TOccHeaSet",
+    "TUnoCooSet",
+    "TUnoHeaSet",
+    "u1Win",
+    "uCooDemLimLev",
+    "uHeaDemLimLev",
+    "cooDowTim",
+    "warUpTim"
+  ],
+  "outputs": [
+    "TCooSet",
+    "THeaSet",
+    "yOpeMod"
+  ]
+}

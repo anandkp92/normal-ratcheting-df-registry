@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "u1SupFan",
+    "TAirSup",
+    "TAirSupSet"
+  ],
+  "outputs": [
+    "uTSup",
+    "yCooCoi",
+    "yHeaCoi"
+  ]
+}

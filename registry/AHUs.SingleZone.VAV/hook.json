@@ -1,0 +1,219 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "AHUs.SingleZone.VAV",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "hAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "hOut",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirRet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uSupFan_actual",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TZon",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TAirMix",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1FreSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1SofSwiRes",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2Set",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1OccSen",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Win",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "cooDowTim",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "cooSetAdj",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "heaSetAdj",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "setAdj",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "tNexOcc",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TOccCooSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TOccHeaSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TUnoCooSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TUnoHeaSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Occ",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uCooDemLimLev",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uHeaDemLimLev",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "warUpTim",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uCooCoi_actual",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uHeaCoi_actual",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "uOutDam",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "dpBui",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "TSupCooSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "TSupHeaEcoSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "TZonCooSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "TZonHeaSet",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1EneCHWPum",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1ExhDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1RelFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1RetFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "y1SupFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yChiPlaReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yChiWatResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yCooCoi",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHeaCoi",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotWatPlaReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotWatResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yOutDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRelDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRelFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yRetFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "ySupFan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

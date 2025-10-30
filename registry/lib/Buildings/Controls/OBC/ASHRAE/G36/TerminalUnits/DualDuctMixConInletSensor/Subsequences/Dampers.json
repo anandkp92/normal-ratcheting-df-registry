@@ -1,0 +1,23 @@
+{
+  "inputs": [
+    "u1CooAHU",
+    "u1HeaAHU",
+    "uCoo",
+    "uHea",
+    "VActMin_flow",
+    "VActCooMax_flow",
+    "VActHeaMax_flow",
+    "TZon",
+    "THotSup",
+    "TColSup",
+    "VColDucDis_flow",
+    "VHotDucDis_flow"
+  ],
+  "outputs": [
+    "VColDucDis_flow_Set",
+    "VDis_flow_Set",
+    "VHotDucDis_flow_Set",
+    "yCooDam",
+    "yHeaDam"
+  ]
+}

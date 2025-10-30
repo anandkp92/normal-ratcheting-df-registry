@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    "VColDucDis_flow",
+    "VHotDucDis_flow",
+    "uCooDam",
+    "uHeaDam",
+    "u1HeaFan",
+    "u1CooFan",
+    "VActSet_flow",
+    "uOpeMod"
+  ],
+  "outputs": [
+    "yColFloSenAla",
+    "yColLeaDamAla",
+    "yHotFloSenAla",
+    "yHotLeaDamAla",
+    "yLowFloAla"
+  ]
+}

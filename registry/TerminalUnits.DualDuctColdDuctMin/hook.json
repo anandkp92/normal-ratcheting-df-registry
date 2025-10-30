@@ -1,0 +1,159 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "TerminalUnits.DualDuctColdDuctMin",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "uOpeMod",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1CooAHU",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1HeaAHU",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VColDucDis_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VHotDucDis_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TCooSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "THeaSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TZon",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TColSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "THotSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "ppmCO2Set",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Occ",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Win",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveCooDamPos",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveFloSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "oveHeaDamPos",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TDis",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "VAdjAreBreZon_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VAdjPopBreZon_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VMinOA_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VSet_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VZonAbsMin_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VZonDesMin_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yCO2",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yColDucPreResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yColFloSenAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yColLeaDamAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yCooDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHeaDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHeaFanReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotDucPreResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotFloSenAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yHotLeaDamAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yLowFloAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonCooTemResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonHeaTemResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

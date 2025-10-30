@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "TZon",
+    "TCooSet",
+    "THeaSet",
+    "uCoo",
+    "uHea",
+    "uOpeMod",
+    "TOut"
+  ],
+  "outputs": [
+    "TSupCooSet",
+    "TSupHeaEcoSet",
+    "y",
+    "y1SupFan"
+  ]
+}
