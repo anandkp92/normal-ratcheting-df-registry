@@ -1062,6 +1062,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -1231,6 +1235,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -1595,6 +1603,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -3028,6 +3040,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -3197,6 +3213,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -3561,6 +3581,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -4994,6 +5018,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -5163,6 +5191,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -5527,6 +5559,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -6960,6 +6996,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -7129,6 +7169,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -7493,6 +7537,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -8926,6 +8974,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -9095,6 +9147,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -9459,6 +9515,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -10892,6 +10952,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -11061,6 +11125,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -11425,6 +11493,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -12858,6 +12930,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -13027,6 +13103,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -13391,6 +13471,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -14824,6 +14908,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -14993,6 +15081,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -15357,6 +15449,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -16790,6 +16886,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -16959,6 +17059,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -17323,6 +17427,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -18756,6 +18864,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -18925,6 +19037,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -19289,6 +19405,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -20722,6 +20842,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -20891,6 +21015,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -21255,6 +21383,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -22688,6 +22820,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -22857,6 +22993,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -23221,6 +23361,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -24654,6 +24798,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -24823,6 +24971,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -25187,6 +25339,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -26620,6 +26776,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -26789,6 +26949,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -27153,6 +27317,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -28586,6 +28754,10 @@
           "type": "registry:lib"
         },
         {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/TimeTable.js",
+          "type": "registry:lib"
+        },
+        {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Integers/Sources/Validation/Constant.js",
           "type": "registry:lib"
         },
@@ -28755,6 +28927,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/SampleTrigger.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Logical/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {
@@ -29119,6 +29295,10 @@
         },
         {
           "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/Sin.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/Buildings/Controls/OBC/CDL/Reals/Sources/TimeTable.js",
           "type": "registry:lib"
         },
         {

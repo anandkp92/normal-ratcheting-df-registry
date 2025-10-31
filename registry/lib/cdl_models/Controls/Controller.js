@@ -78,7 +78,7 @@ module.exports = (
   // http://example.org#cdl_models.Controls.multiple_zone_ratchet.single_zone_ratchet_heating
   const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_7fc1a8c9({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
   // http://example.org#cdl_models.Controls.multiple_zone_ratchet.loaShe
-  const loaSheFn = timetable_61011cf1({ period: 86400, table: "[0,0;loadShedHourStart,1;loadShedHourEnd,0;24,0]", timeScale: 3600 });
+  const loaSheFn = timetable_61011cf1({ period: 86400, table: [[0,0],[loadShedHourStart,1],[loadShedHourEnd,0],[24,0]], timeScale: 3600 });
   // http://example.org#cdl_models.Controls.multiple_zone_ratchet.subt1
   const subt1Fn = subtract_040901c2({});
   // http://example.org#cdl_models.Controls.multiple_zone_ratchet.temDifSelectionMaxCooRat
