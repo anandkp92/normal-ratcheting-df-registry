@@ -1,6 +1,6 @@
 {
   "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
-  "name": "AHUs.MultiZone.VAV.Economizers",
+  "name": "Buildings.Controls.OBC.ASHRAE.G36.AHUs.SingleZone.VAV.Economizers",
   "schedule": {
     "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
   },
@@ -10,15 +10,19 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
+      "name": "uFreProSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
       "name": "uOpeMod",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "VOut_flow_normalized",
+      "name": "uSupFan_actual",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "VOutMinSet_flow_normalized",
+      "name": "VOutMinSet_flow",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -30,7 +34,7 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "hAirOut",
+      "name": "hOut",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -38,45 +42,21 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "uFreProSta",
+      "name": "uZonSta",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "uTSup",
+      "name": "TAirSup",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "uSupFan",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "dpMinOutDam",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "effAbsOutAir_normalized",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "effDesOutAir_normalized",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uCO2Loo_max",
+      "name": "TSupHeaEcoSet",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     }
   ],
   "outputs": [
     {
-      "label": "y1MinOutDam",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "yEnaMinOut",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "yMinOutDam",
+      "label": "yHeaCoi",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
@@ -85,10 +65,6 @@
     },
     {
       "label": "yOutDam_min",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "yRelDam",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
-  "name": "TerminalUnits.ParallelFanCVF",
+  "name": "Buildings.Controls.OBC.ASHRAE.G36.TerminalUnits.ParallelFanVVF",
   "schedule": {
     "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
   },
@@ -93,6 +93,10 @@
     },
     {
       "label": "VAdjPopBreZon_flow",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "VFan_flow_Set",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {

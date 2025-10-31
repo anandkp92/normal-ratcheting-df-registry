@@ -1,28 +1,40 @@
 {
   "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
-  "name": "AHUs.SingleZone.VAV",
+  "name": "Buildings.Controls.OBC.ASHRAE.G36.TerminalUnits.DualDuctSnapActing",
   "schedule": {
     "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
   },
   "inputs": [
     {
-      "name": "hAirRet",
+      "name": "uOpeMod",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "hOut",
+      "name": "u1CooAHU",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "TAirRet",
+      "name": "u1HeaAHU",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "TAirSup",
+      "name": "VColDucDis_flow",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "uSupFan_actual",
+      "name": "VDis_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VHotDucDis_flow",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TCooSet",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "THeaSet",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -30,15 +42,11 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "TAirMix",
+      "name": "TColSup",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "u1FreSta",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "u1SofSwiRes",
+      "name": "THotSup",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -50,7 +58,7 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "u1OccSen",
+      "name": "u1Occ",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -58,161 +66,105 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "cooDowTim",
+      "name": "oveCooDamPos",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "cooSetAdj",
+      "name": "oveFloSet",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "heaSetAdj",
+      "name": "oveHeaDamPos",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "setAdj",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "tNexOcc",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "TOccCooSet",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "TOccHeaSet",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "TUnoCooSet",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "TUnoHeaSet",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "u1Occ",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uCooDemLimLev",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uHeaDemLimLev",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "warUpTim",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uCooCoi_actual",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uHeaCoi_actual",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "uOutDam",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "dpBui",
+      "name": "TDis",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     }
   ],
   "outputs": [
     {
-      "label": "TSupCooSet",
+      "label": "VAdjAreBreZon_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "TSupHeaEcoSet",
+      "label": "VAdjPopBreZon_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "TZonCooSet",
+      "label": "VMinOA_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "TZonHeaSet",
+      "label": "VSet_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "y1EneCHWPum",
+      "label": "VZonAbsMin_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "y1ExhDam",
+      "label": "VZonDesMin_flow",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "y1RelFan",
+      "label": "yCO2",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "y1RetFan",
+      "label": "yColDucPreResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "y1SupFan",
+      "label": "yColFloSenAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yAla",
+      "label": "yColLeaDamAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yChiPlaReq",
+      "label": "yCooDam",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yChiWatResReq",
+      "label": "yFloSenAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yCooCoi",
+      "label": "yHeaDam",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yHeaCoi",
+      "label": "yHeaFanReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yHotWatPlaReq",
+      "label": "yHotDucPreResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yHotWatResReq",
+      "label": "yHotFloSenAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yOutDam",
+      "label": "yHotLeaDamAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yRelDam",
+      "label": "yLeaDamAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yRelFan",
+      "label": "yLowFloAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yRetDam",
+      "label": "yZonCooTemResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yRetFan",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "ySupFan",
+      "label": "yZonHeaTemResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     }
   ]

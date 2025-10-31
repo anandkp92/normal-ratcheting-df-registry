@@ -1,0 +1,35 @@
+{
+  "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
+  "name": "cdl_models.Controls",
+  "schedule": {
+    "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
+  },
+  "inputs": [
+    {
+      "name": "TZon",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TZonCooSetCur",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "TZonHeaSetCur",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "occSta",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "TZonCooSetCom",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "TZonHeaSetCom",
+      "type": "VARIABLE_TYPE_GROUPED"
+    }
+  ]
+}

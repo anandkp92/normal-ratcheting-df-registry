@@ -1,6 +1,6 @@
 {
   "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
-  "name": "TerminalUnits.DualDuctMixConDischargeSensor",
+  "name": "Buildings.Controls.OBC.ASHRAE.G36.TerminalUnits.Reheat",
   "schedule": {
     "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
   },
@@ -10,11 +10,19 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "u1CooAHU",
+      "name": "TDis",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "u1HeaAHU",
+      "name": "TSup",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1Fan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "u1HotPla",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -34,11 +42,11 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "TColSup",
+      "name": "oveFloSet",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "THotSup",
+      "name": "TSupSet",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -58,19 +66,11 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "oveCooDamPos",
+      "name": "oveDamPos",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "oveFloSet",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "oveHeaDamPos",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "TDis",
+      "name": "uHeaOff",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     }
   ],
@@ -104,11 +104,7 @@
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yColDucPreResReq",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "yCooDam",
+      "label": "yDam",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
@@ -116,15 +112,11 @@
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yHeaDam",
+      "label": "yHeaValResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yHeaFanReq",
-      "type": "VARIABLE_TYPE_GROUPED"
-    },
-    {
-      "label": "yHotDucPreResReq",
+      "label": "yHotWatPlaReq",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
@@ -132,15 +124,27 @@
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
+      "label": "yLeaValAla",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
       "label": "yLowFloAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yZonCooTemResReq",
+      "label": "yLowTemAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
-      "label": "yZonHeaTemResReq",
+      "label": "yVal",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonPreResReq",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yZonTemResReq",
       "type": "VARIABLE_TYPE_GROUPED"
     }
   ]

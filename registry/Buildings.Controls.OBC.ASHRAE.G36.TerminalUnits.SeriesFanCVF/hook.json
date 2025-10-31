@@ -1,6 +1,6 @@
 {
   "$schema": "https://portal.normal-online.net/schema/HookDefinition.json",
-  "name": "TerminalUnits.Reheat",
+  "name": "Buildings.Controls.OBC.ASHRAE.G36.TerminalUnits.SeriesFanCVF",
   "schedule": {
     "rrule": "RRULE:FREQ=SECONDLY;INTERVAL=1"
   },
@@ -26,7 +26,11 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
-      "name": "VDis_flow",
+      "name": "u1TerFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
+      "name": "VPri_flow",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
@@ -70,6 +74,10 @@
       "type": "HOOK_INPUT_TYPE_GROUPED"
     },
     {
+      "name": "oveFan",
+      "type": "HOOK_INPUT_TYPE_GROUPED"
+    },
+    {
       "name": "uHeaOff",
       "type": "HOOK_INPUT_TYPE_GROUPED"
     }
@@ -100,11 +108,19 @@
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
+      "label": "y1Fan",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
       "label": "yCO2",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
       "label": "yDam",
+      "type": "VARIABLE_TYPE_GROUPED"
+    },
+    {
+      "label": "yFanStaAla",
       "type": "VARIABLE_TYPE_GROUPED"
     },
     {
