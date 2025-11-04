@@ -18,6 +18,8 @@ module.exports = (
   const conFn = constant_d2aca5e8({ k: 1000 });
   // http://example.org#cdl_models.Controls.Subsequences.temDifSelectionMin.swi
   const swiFn = switch_91d77162({});
+  // http://example.org#cdl_models.Controls.Subsequences.temDifSelectionMin.const
+  const _constFn = constant_d2aca5e8({ k: "1:1:nZones" });
   // http://example.org#cdl_models.Controls.Subsequences.temDifSelectionMin.gai
   const gaiFn = multiplybyparameter_8938fce0({ k: 0.000001 });
   // http://example.org#cdl_models.Controls.Subsequences.temDifSelectionMin.add2
@@ -36,7 +38,8 @@ module.exports = (
   ) => {
     const con = conFn({});
     const swi = swiFn({ u1: con.y, u2: ignoreFlag, u3: TZonTemDif });
-    const gai = gaiFn({});
+    const _const = _constFn({});
+    const gai = gaiFn({ u: _const.y });
     const add2 = add2Fn({ u1: swi.y, u2: gai.y });
     const mulMin = mulMinFn({ u: add2.y });
     const reaScaRep = reaScaRepFn({ u: mulMin.y });
