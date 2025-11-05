@@ -9,20 +9,20 @@ const subtract_040901c2 = require("../../Buildings/Controls/OBC/CDL/Reals/Subtra
 const switch_91d77162 = require("../../Buildings/Controls/OBC/CDL/Reals/Switch");
 const booleanscalarreplicator_85f98ef6 = require("../../Buildings/Controls/OBC/CDL/Routing/BooleanScalarReplicator");
 const realscalarreplicator_6941df46 = require("../../Buildings/Controls/OBC/CDL/Routing/RealScalarReplicator");
-const single_zone_ratchet_cooling_89149cd0 = require("../../Subsequences/single_zone_ratchet_cooling");
-const single_zone_ratchet_heating_7fc1a8c9 = require("../../Subsequences/single_zone_ratchet_heating");
-const temdifselectionmax_1c237ae4 = require("../../Subsequences/temDifSelectionMax");
-const temdifselectionmin_1c237bd2 = require("../../Subsequences/temDifSelectionMin");
+const single_zone_ratchet_cooling_96ede778 = require("./Subsequences/single_zone_ratchet_cooling");
+const single_zone_ratchet_heating_8d9af371 = require("./Subsequences/single_zone_ratchet_heating");
+const temdifselectionmax_44b4133c = require("./Subsequences/temDifSelectionMax");
+const temdifselectionmin_44b4142a = require("./Subsequences/temDifSelectionMin");
 
 module.exports = (
   {
-		loadShedHourEnd = 18,
+		loadShedHourEnd = 21,
 		loadShedHourStart = 16,
 		loaSheCooAct = true,
 		loaSheHeaAct = true,
 		loadShedDurationTypical = 7200,
 		loadShedTempAmount = 5,
-		nZones = 3,
+		nZones = 4,
 		TRat = 1,
 		samplePeriodRatchet = loadShedDurationTypical*0.3333*TRat/loadShedTempAmount/nZones,
 		reboundDuration = 3600,
@@ -35,62 +35,62 @@ module.exports = (
 		TZonHeaSetNomUnocc = 273.15 +12,
     } = {}
 ) => {
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.booScaRep1
+  // http://example.org#cdl_models.Controls.Controller.booScaRep1
   const booScaRep1Fn = booleanscalarreplicator_85f98ef6({ nout: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con2
+  // http://example.org#cdl_models.Controls.Controller.con2
   const con2Fn = constant_655d39b4({ k: loaSheCooAct });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con
+  // http://example.org#cdl_models.Controls.Controller.con
   const conFn = constant_655d39b4({ k: false });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.logSwi3
+  // http://example.org#cdl_models.Controls.Controller.logSwi3
   const logSwi3Fn = switch_1e2c142e({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con3
+  // http://example.org#cdl_models.Controls.Controller.con3
   const con3Fn = constant_d2aca5e8({ k: loadShedTempAmount });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con5
+  // http://example.org#cdl_models.Controls.Controller.con5
   const con5Fn = constant_d2aca5e8({ k: TZonCooSetNomOcc });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con7
+  // http://example.org#cdl_models.Controls.Controller.con7
   const con7Fn = constant_d2aca5e8({ k: TZonCooSetNomUnocc });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.TZonCooSetNom
+  // http://example.org#cdl_models.Controls.Controller.TZonCooSetNom
   const TZonCooSetNomFn = switch_91d77162({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.TZonCooSetMax
+  // http://example.org#cdl_models.Controls.Controller.TZonCooSetMax
   const TZonCooSetMaxFn = add_53459d33({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.reaScaRep2
+  // http://example.org#cdl_models.Controls.Controller.reaScaRep2
   const reaScaRep2Fn = realscalarreplicator_6941df46({ nout: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.reaScaRep3
+  // http://example.org#cdl_models.Controls.Controller.reaScaRep3
   const reaScaRep3Fn = realscalarreplicator_6941df46({ nout: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.single_zone_ratchet_cooling
-  const single_zone_ratchet_coolingFn = single_zone_ratchet_cooling_89149cd0({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con1
+  // http://example.org#cdl_models.Controls.Controller.single_zone_ratchet_cooling
+  const single_zone_ratchet_coolingFn = single_zone_ratchet_cooling_96ede778({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
+  // http://example.org#cdl_models.Controls.Controller.con1
   const con1Fn = constant_655d39b4({ k: loaSheHeaAct });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.logSwi2
+  // http://example.org#cdl_models.Controls.Controller.logSwi2
   const logSwi2Fn = switch_1e2c142e({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con4
+  // http://example.org#cdl_models.Controls.Controller.con4
   const con4Fn = constant_d2aca5e8({ k: TZonHeaSetNomOcc });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.con6
+  // http://example.org#cdl_models.Controls.Controller.con6
   const con6Fn = constant_d2aca5e8({ k: TZonHeaSetNomUnocc });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.TZonHeaSetNom
+  // http://example.org#cdl_models.Controls.Controller.TZonHeaSetNom
   const TZonHeaSetNomFn = switch_91d77162({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.TZonHeaSetMin
+  // http://example.org#cdl_models.Controls.Controller.TZonHeaSetMin
   const TZonHeaSetMinFn = subtract_040901c2({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.reaScaRep
+  // http://example.org#cdl_models.Controls.Controller.reaScaRep
   const reaScaRepFn = realscalarreplicator_6941df46({ nout: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.reaScaRep1
+  // http://example.org#cdl_models.Controls.Controller.reaScaRep1
   const reaScaRep1Fn = realscalarreplicator_6941df46({ nout: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.single_zone_ratchet_heating
-  const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_7fc1a8c9({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.loaShe
+  // http://example.org#cdl_models.Controls.Controller.single_zone_ratchet_heating
+  const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_8d9af371({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
+  // http://example.org#cdl_models.Controls.Controller.loaShe
   const loaSheFn = timetable_61011cf1({ period: 86400, table: [[0,0],[loadShedHourStart,1],[loadShedHourEnd,0],[24,0]], timeScale: 3600 });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.subt1
+  // http://example.org#cdl_models.Controls.Controller.subt1
   const subt1Fn = subtract_040901c2({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.temDifSelectionMaxCooRat
-  const temDifSelectionMaxCooRatFn = temdifselectionmax_1c237ae4({ nZones: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.temDifSelectionMinCooReb
-  const temDifSelectionMinCooRebFn = temdifselectionmin_1c237bd2({ nZones: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.subt
+  // http://example.org#cdl_models.Controls.Controller.temDifSelectionMaxCooRat
+  const temDifSelectionMaxCooRatFn = temdifselectionmax_44b4133c({ nZones: nZones });
+  // http://example.org#cdl_models.Controls.Controller.temDifSelectionMinCooReb
+  const temDifSelectionMinCooRebFn = temdifselectionmin_44b4142a({ nZones: nZones });
+  // http://example.org#cdl_models.Controls.Controller.subt
   const subtFn = subtract_040901c2({});
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.temDifSelectionMinHeaRat
-  const temDifSelectionMinHeaRatFn = temdifselectionmin_1c237bd2({ nZones: nZones });
-  // http://example.org#cdl_models.Controls.multiple_zone_ratchet.temDifSelectionMaxHeaReb
-  const temDifSelectionMaxHeaRebFn = temdifselectionmax_1c237ae4({ nZones: nZones });
+  // http://example.org#cdl_models.Controls.Controller.temDifSelectionMinHeaRat
+  const temDifSelectionMinHeaRatFn = temdifselectionmin_44b4142a({ nZones: nZones });
+  // http://example.org#cdl_models.Controls.Controller.temDifSelectionMaxHeaReb
+  const temDifSelectionMaxHeaRebFn = temdifselectionmax_44b4133c({ nZones: nZones });
 
   return (
     { TZon, TZonCooSetCur, TZonHeaSetCur, occSta }
