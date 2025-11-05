@@ -2025,14 +2025,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -4058,14 +4050,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -6093,14 +6077,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -8126,14 +8102,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -10161,14 +10129,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -12194,14 +12154,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -14229,14 +14181,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -16262,14 +16206,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -18297,14 +18233,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -20330,14 +20258,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -22365,14 +22285,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -24398,14 +24310,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
@@ -26433,14 +26337,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -28467,14 +28363,6 @@
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
           "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
-          "type": "registry:lib"
         }
       ]
     },
@@ -30500,14 +30388,6 @@
         },
         {
           "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMax.js",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/temDifSelectionMin.js",
           "type": "registry:lib"
         }
       ]
