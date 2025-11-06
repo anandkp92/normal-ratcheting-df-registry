@@ -46,8 +46,7 @@ module.exports = async ({points}) => {
   const params = {
     TZon: await read('TZon'),
 		TZonCooSetCur: await read('TZonCooSetCur'),
-		TZonHeaSetCur: await read('TZonHeaSetCur'),
-		occSta: await read('occSta')
+		TZonHeaSetCur: await read('TZonHeaSetCur')
   };
   const { TZonCooSetCom, TZonHeaSetCom } = instance(params);
 

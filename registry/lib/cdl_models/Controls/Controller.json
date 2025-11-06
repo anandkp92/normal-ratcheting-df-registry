@@ -2,8 +2,7 @@
   "inputs": [
     "TZon",
     "TZonCooSetCur",
-    "TZonHeaSetCur",
-    "occSta"
+    "TZonHeaSetCur"
   ],
   "outputs": [
     "TZonCooSetCom",

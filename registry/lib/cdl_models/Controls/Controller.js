@@ -14,6 +14,8 @@ module.exports = (
   {
 		loaSheCooAct = true,
 		loaSheHeaAct = true,
+		occStaHourEnd = 20,
+		occStaHourStart = 7,
 		loadShedHourEnd = 21,
 		loadShedHourStart = 16,
 		loadShedDurationTypical = (loadShedHourEnd -loadShedHourStart)*3600,
@@ -60,25 +62,28 @@ module.exports = (
   const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_8d9af371({ reboundDuration: reboundDuration, samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
   // http://example.org#cdl_models.Controls.Controller.loaShe
   const loaSheFn = timetable_61011cf1({ period: 86400, table: [[0,0],[loadShedHourStart,1],[loadShedHourEnd,0],[24,0]], timeScale: 3600 });
+  // http://example.org#cdl_models.Controls.Controller.occSta
+  const occStaFn = timetable_61011cf1({ period: 86400, table: [[0,0],[occStaHourStart,1],[occStaHourEnd,0],[24,0]], timeScale: 3600 });
 
   return (
-    { TZon, TZonCooSetCur, TZonHeaSetCur, occSta }
+    { TZon, TZonCooSetCur, TZonHeaSetCur }
   ) => {
     const con2 = con2Fn({});
     const con = conFn({});
     const logSwi3 = logSwi3Fn({ u2: con2.y, u3: con.y });
     const con5 = con5Fn({});
     const con3 = con3Fn({});
-    const TZonCooSetNom = TZonCooSetNomFn({ u: occSta });
+    const TZonCooSetNom = TZonCooSetNomFn({});
     const TZonCooSetMax = TZonCooSetMaxFn({ u1: con3.y, u2: TZonCooSetNom.y });
     const single_zone_ratchet_cooling = single_zone_ratchet_coolingFn({ loaShe: logSwi3.y, rebSig: con5.y, TZon: TZon, TZonCooSetCur: TZonCooSetCur, TZonCooSetMax: TZonCooSetMax.y, TZonCooSetNom: TZonCooSetNom.y });
     const con1 = con1Fn({});
     const logSwi2 = logSwi2Fn({ u2: con1.y, u3: con.y });
     const con4 = con4Fn({});
-    const TZonHeaSetNom = TZonHeaSetNomFn({ u: occSta });
+    const TZonHeaSetNom = TZonHeaSetNomFn({});
     const TZonHeaSetMin = TZonHeaSetMinFn({ u1: TZonHeaSetNom.y, u2: con3.y });
     const single_zone_ratchet_heating = single_zone_ratchet_heatingFn({ loaShe: logSwi2.y, rebSig: con4.y, TZon: TZon, TZonHeaSetCur: TZonHeaSetCur, TZonHeaSetMin: TZonHeaSetMin.y, TZonHeaSetNom: TZonHeaSetNom.y });
     const loaShe = loaSheFn({});
+    const occSta = occStaFn({});
 
     return { TZonCooSetCom: single_zone_ratchet_cooling.TZonCooSetCom, TZonHeaSetCom: single_zone_ratchet_heating.TZonSetHeaCom };
   }

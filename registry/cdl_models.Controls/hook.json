@@ -16,10 +16,6 @@
     {
       "name": "TZonHeaSetCur",
       "type": "HOOK_INPUT_TYPE_GROUPED"
-    },
-    {
-      "name": "occSta",
-      "type": "HOOK_INPUT_TYPE_GROUPED"
     }
   ],
   "outputs": [
