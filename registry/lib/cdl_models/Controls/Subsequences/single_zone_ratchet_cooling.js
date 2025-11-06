@@ -4,6 +4,7 @@ const booleantoreal_552dc85b = require("../../../Buildings/Controls/OBC/CDL/Conv
 const sampler_dd234808 = require("../../../Buildings/Controls/OBC/CDL/Discrete/Sampler");
 const and_f2b4cf1d = require("../../../Buildings/Controls/OBC/CDL/Logical/And");
 const not_f2b50019 = require("../../../Buildings/Controls/OBC/CDL/Logical/Not");
+const truedelay_17dc655b = require("../../../Buildings/Controls/OBC/CDL/Logical/TrueDelay");
 const add_53459d33 = require("../../../Buildings/Controls/OBC/CDL/Reals/Add");
 const greater_2582f78c = require("../../../Buildings/Controls/OBC/CDL/Reals/Greater");
 const greaterthreshold_7c60ca3f = require("../../../Buildings/Controls/OBC/CDL/Reals/GreaterThreshold");
@@ -15,6 +16,7 @@ const switch_91d77162 = require("../../../Buildings/Controls/OBC/CDL/Reals/Switc
 
 module.exports = (
   {
+		reboundDuration = 3600,
 		samplePeriodRatchet = 300,
 		samplePeriodRebound = 900,
 		TRat = 1,
@@ -54,9 +56,17 @@ module.exports = (
   const sam1Fn = sampler_dd234808({ samplePeriod: samplePeriodRebound });
   // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_cooling.swi1
   const swi1Fn = switch_91d77162({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_cooling.not2
+  const not2Fn = not_f2b50019({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_cooling.truDel
+  const truDelFn = truedelay_17dc655b({ delayTime: reboundDuration });
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_cooling.not1
+  const not1Fn = not_f2b50019({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_cooling.swi2
+  const swi2Fn = switch_91d77162({});
 
   return (
-    { TZonCooSetCur, ratSig, rebSig, TZonCooSetNom, TZonCooSetMax, TZon, loaShe }
+    { TZonCooSetCur, ratSig, rebSig, TZonCooSetNom, TZonCooSetMax, loaShe, TZon }
   ) => {
     const les = lesFn({ u1: TZonCooSetCur, u2: TZonCooSetMax });
     const not3 = not3Fn({ u: les.y });
@@ -74,7 +84,11 @@ module.exports = (
     const sam = samFn({ u: max1.y });
     const sam1 = sam1Fn({ u: max1.y });
     const swi1 = swi1Fn({ u1: sam.y, u2: loaShe, u3: sam1.y });
+    const not2 = not2Fn({ u: loaShe });
+    const truDel = truDelFn({ u: not2.y });
+    const not1 = not1Fn({ u: truDel.y });
+    const swi2 = swi2Fn({ u1: swi1.y, u2: not1.y, u3: TZonCooSetNom });
 
-    return { reachTZonCooSetMax: not3.y, reachTZonCooSetNom: not4.y, TZonCooSetCom: swi1.y };
+    return { reachTZonCooSetMax: not3.y, reachTZonCooSetNom: not4.y, TZonCooSetCom: swi2.y };
   }
 }

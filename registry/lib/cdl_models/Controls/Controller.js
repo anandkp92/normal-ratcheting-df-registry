@@ -45,7 +45,7 @@ module.exports = (
   // http://example.org#cdl_models.Controls.Controller.TZonCooSetMax
   const TZonCooSetMaxFn = add_53459d33({});
   // http://example.org#cdl_models.Controls.Controller.single_zone_ratchet_cooling
-  const single_zone_ratchet_coolingFn = single_zone_ratchet_cooling_96ede778({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
+  const single_zone_ratchet_coolingFn = single_zone_ratchet_cooling_96ede778({ reboundDuration: reboundDuration, samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
   // http://example.org#cdl_models.Controls.Controller.con1
   const con1Fn = constant_655d39b4({ k: loaSheHeaAct });
   // http://example.org#cdl_models.Controls.Controller.logSwi2
@@ -57,7 +57,7 @@ module.exports = (
   // http://example.org#cdl_models.Controls.Controller.TZonHeaSetMin
   const TZonHeaSetMinFn = subtract_040901c2({});
   // http://example.org#cdl_models.Controls.Controller.single_zone_ratchet_heating
-  const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_8d9af371({ samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
+  const single_zone_ratchet_heatingFn = single_zone_ratchet_heating_8d9af371({ reboundDuration: reboundDuration, samplePeriodRatchet: samplePeriodRatchet, samplePeriodRebound: samplePeriodRebound, TRat: TRat, TRatThreshold: TRatThreshold, TReb: TReb });
   // http://example.org#cdl_models.Controls.Controller.loaShe
   const loaSheFn = timetable_61011cf1({ period: 86400, table: [[0,0],[loadShedHourStart,1],[loadShedHourEnd,0],[24,0]], timeScale: 3600 });
 

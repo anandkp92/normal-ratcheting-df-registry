@@ -4,6 +4,7 @@ const booleantoreal_552dc85b = require("../../../Buildings/Controls/OBC/CDL/Conv
 const sampler_dd234808 = require("../../../Buildings/Controls/OBC/CDL/Discrete/Sampler");
 const and_f2b4cf1d = require("../../../Buildings/Controls/OBC/CDL/Logical/And");
 const not_f2b50019 = require("../../../Buildings/Controls/OBC/CDL/Logical/Not");
+const truedelay_17dc655b = require("../../../Buildings/Controls/OBC/CDL/Logical/TrueDelay");
 const add_53459d33 = require("../../../Buildings/Controls/OBC/CDL/Reals/Add");
 const greater_2582f78c = require("../../../Buildings/Controls/OBC/CDL/Reals/Greater");
 const less_15730f47 = require("../../../Buildings/Controls/OBC/CDL/Reals/Less");
@@ -15,6 +16,7 @@ const switch_91d77162 = require("../../../Buildings/Controls/OBC/CDL/Reals/Switc
 
 module.exports = (
   {
+		reboundDuration = 3600,
 		samplePeriodRatchet = 300,
 		samplePeriodRebound = 900,
 		TRat = -1,
@@ -54,9 +56,17 @@ module.exports = (
   const sam1Fn = sampler_dd234808({ samplePeriod: samplePeriodRebound });
   // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.swi1
   const swi1Fn = switch_91d77162({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not3
+  const not3Fn = not_f2b50019({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.truDel
+  const truDelFn = truedelay_17dc655b({ delayTime: reboundDuration });
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not4
+  const not4Fn = not_f2b50019({});
+  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.swi2
+  const swi2Fn = switch_91d77162({});
 
   return (
-    { TZonHeaSetCur, ratSig, rebSig, TZonHeaSetMin, TZonHeaSetNom, TZon, loaShe }
+    { TZonHeaSetCur, ratSig, rebSig, TZonHeaSetMin, TZonHeaSetNom, loaShe, TZon }
   ) => {
     const gre3 = gre3Fn({ u1: TZonHeaSetCur, u2: TZonHeaSetMin });
     const not2 = not2Fn({ u: gre3.y });
@@ -74,7 +84,11 @@ module.exports = (
     const sam = samFn({ u: max1.y });
     const sam1 = sam1Fn({ u: max1.y });
     const swi1 = swi1Fn({ u1: sam.y, u2: loaShe, u3: sam1.y });
+    const not3 = not3Fn({ u: loaShe });
+    const truDel = truDelFn({ u: not3.y });
+    const not4 = not4Fn({ u: truDel.y });
+    const swi2 = swi2Fn({ u1: swi1.y, u2: not4.y, u3: TZonHeaSetNom });
 
-    return { reachTZonHeaSetMin: not2.y, reachTZonHeaSetNom: not1.y, TZonSetHeaCom: swi1.y };
+    return { reachTZonHeaSetMin: not2.y, reachTZonHeaSetNom: not1.y, TZonSetHeaCom: swi2.y };
   }
 }

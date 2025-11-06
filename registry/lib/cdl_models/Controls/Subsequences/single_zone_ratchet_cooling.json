@@ -5,8 +5,8 @@
     "rebSig",
     "TZonCooSetNom",
     "TZonCooSetMax",
-    "TZon",
-    "loaShe"
+    "loaShe",
+    "TZon"
   ],
   "outputs": [
     "reachTZonCooSetMax",

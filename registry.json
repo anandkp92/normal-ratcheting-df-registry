@@ -1,6 +1,6 @@
 {
   "$schema": "https://portal.normal-online.net/schema/RegistryDefinition.json",
-  "name": "Modelica Registry",
+  "name": "Modelica DF Registry",
   "hooks": [
     {
       "name": "Buildings.Controls.OBC.ASHRAE.G36.AHUs.MultiZone.VAV",

@@ -5,8 +5,8 @@
     "rebSig",
     "TZonHeaSetMin",
     "TZonHeaSetNom",
-    "TZon",
-    "loaShe"
+    "loaShe",
+    "TZon"
   ],
   "outputs": [
     "reachTZonHeaSetMin",
