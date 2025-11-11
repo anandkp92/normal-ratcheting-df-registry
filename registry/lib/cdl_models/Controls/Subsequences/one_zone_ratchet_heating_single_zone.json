@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "loaShe",
+    "TZon",
+    "TZonHeaSetCur",
+    "TZonHeaSetMin",
+    "TZonHeaSetNom"
+  ],
+  "outputs": [
+    "TZonSetHeaCom"
+  ]
+}

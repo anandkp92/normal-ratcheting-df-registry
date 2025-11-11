@@ -2019,11 +2019,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -4045,11 +4057,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -6071,11 +6095,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -8097,11 +8133,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -10123,11 +10171,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -12149,11 +12209,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -14175,11 +14247,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -16201,11 +16285,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -18227,11 +18323,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -20253,11 +20361,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -22279,11 +22399,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -24305,11 +24437,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -26331,11 +26475,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -28357,11 +28513,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]
@@ -30383,11 +30551,23 @@
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_cooling.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling.js",
           "type": "registry:lib"
         },
         {
-          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_heating.js",
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_cooling_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/one_zone_ratchet_heating_single_zone.js",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/lib/cdl_models/Controls/Subsequences/single_zone_ratchet_base.js",
           "type": "registry:lib"
         }
       ]

@@ -1,5 +1,5 @@
 
-// http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating
+// http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating
 const booleantoreal_552dc85b = require("../../../Buildings/Controls/OBC/CDL/Conversions/BooleanToReal");
 const sampler_dd234808 = require("../../../Buildings/Controls/OBC/CDL/Discrete/Sampler");
 const and_f2b4cf1d = require("../../../Buildings/Controls/OBC/CDL/Logical/And");
@@ -24,45 +24,45 @@ module.exports = (
 		TReb = 1,
     } = {}
 ) => {
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.gre3
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.gre3
   const gre3Fn = greater_2582f78c({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not2
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.not2
   const not2Fn = not_f2b50019({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.les1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.les1
   const les1Fn = less_15730f47({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.not1
   const not1Fn = not_f2b50019({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.subt
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.subt
   const subtFn = subtract_040901c2({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.lesThr
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.lesThr
   const lesThrFn = lessthreshold_854034e4({ h: 0, t: TRatThreshold });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.and2
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.and2
   const and2Fn = and_f2b4cf1d({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.booToRea
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.booToRea
   const booToReaFn = booleantoreal_552dc85b({ realFalse: 0, realTrue: -TRat });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.booToRea1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.booToRea1
   const booToRea1Fn = booleantoreal_552dc85b({ realFalse: 0, realTrue: TReb });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.swi6
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.swi6
   const swi6Fn = switch_91d77162({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.add
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.add
   const addFn = add_53459d33({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.min1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.min1
   const min1Fn = min_5345cae4({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.max1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.max1
   const max1Fn = max_5345c9f6({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.sam
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.sam
   const samFn = sampler_dd234808({ samplePeriod: samplePeriodRatchet });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.sam1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.sam1
   const sam1Fn = sampler_dd234808({ samplePeriod: samplePeriodRebound });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.swi1
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.swi1
   const swi1Fn = switch_91d77162({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not3
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.not3
   const not3Fn = not_f2b50019({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.truDel
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.truDel
   const truDelFn = truedelay_17dc655b({ delayTime: reboundDuration });
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.not4
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.not4
   const not4Fn = not_f2b50019({});
-  // http://example.org#cdl_models.Controls.Subsequences.single_zone_ratchet_heating.swi2
+  // http://example.org#cdl_models.Controls.Subsequences.one_zone_ratchet_heating.swi2
   const swi2Fn = switch_91d77162({});
 
   return (

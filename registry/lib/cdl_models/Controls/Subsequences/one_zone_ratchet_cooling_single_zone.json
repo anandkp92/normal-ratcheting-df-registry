@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "loaShe",
+    "TZon",
+    "TZonCooSetCur",
+    "TZonCooSetMax",
+    "TZonCooSetNom"
+  ],
+  "outputs": [
+    "TZonCooSetCom"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "inputs": [
+    "loaShe",
+    "TZon",
+    "TZonCooSetCur",
+    "TZonHeaSetCur",
+    "occSta"
+  ],
+  "outputs": [
+    "TZonCooSetCom",
+    "TZonHeaSetCom"
+  ]
+}
